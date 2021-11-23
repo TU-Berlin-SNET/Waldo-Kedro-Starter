@@ -1,0 +1,7 @@
+# parameters.yml contains the parameters that can be used inside kedro pipelines
+
+export_to_csv: true
+
+model_param1:
+  name: "sample"
+  cols: ["col1", "col2", "col3"]

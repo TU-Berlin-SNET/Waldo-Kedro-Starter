@@ -1,0 +1,18 @@
+# catalog.yml contains the kedro datasets used inside the pipelines
+
+sample_data:
+  type: pandas.CSVDataSet
+  filepath: data/00_input/sample_data.csv
+
+samples:
+  type: pandas.SQLTableDataSet
+  table_name: samples
+  credentials: postgres
+  save_args:
+    if_exists: append
+    index: false
+    schema: public
+
+outliers:
+  type: waldo_kedro_plugin.datasets.OutlierScoreDataSet
+  use_copy: true
