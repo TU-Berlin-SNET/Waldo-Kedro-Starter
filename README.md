@@ -1,8 +1,10 @@
 # The `waldo-kedro-starter` Kedro starter
 
+This Kedro starter was created as part of the [_Waldo_](https://www.snet.tu-berlin.de/menue/projects/waldo/) research project.
+
 ## Authors
-- Aljoscha Schulte
-- Christoph Schulthess
+- [Aljoscha Schulte](https://www.snet.tu-berlin.de/menue/team/aljoscha_schulte/)
+- [Christoph Schulthess](https://www.snet.tu-berlin.de/menue/team/christoph_schulthess/)
 - [Uttam Dhakal](https://github.com/uttamdhakal)
 - [Zohaib Akhtar Khan](https://github.com/zakhan4)
 
