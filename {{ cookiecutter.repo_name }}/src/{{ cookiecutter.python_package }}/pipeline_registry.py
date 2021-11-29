@@ -40,7 +40,7 @@ def register_pipelines() -> Dict[str, Pipeline]:
 
     """
 
-    nokia_pipeline = pre.create_pipeline()
+    pre_pipeline = pre.create_pipeline()
     ad_pipeline = ad.create_pipeline()
     post_pipeline = post.create_pipeline()
 
@@ -49,8 +49,8 @@ def register_pipelines() -> Dict[str, Pipeline]:
     LoggingGateway()
 
     return {
-        "nk": nokia_pipeline,
+        "pre": pre_pipeline,
         "ad": ad_pipeline,
         "post": post_pipeline,
-        "__default__": nokia_pipeline + ad_pipeline + post_pipeline,
+        "__default__": pre_pipeline + ad_pipeline + post_pipeline,
     }
